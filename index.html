@@ -16,7 +16,9 @@
     header{background:#fff;position:sticky;top:0;z-index:20;box-shadow:0 3px 15px #0b35551a}
     .head{max-width:1180px;margin:auto;padding:13px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
     .brand{display:flex;align-items:center;gap:12px;min-width:0}
-    .logo{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#ffca48,#fff1b9);border:3px solid var(--blue);color:var(--navy);font-weight:900;font-size:20px;flex-shrink:0}
+    .logo{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#ffca48,#fff1b9);border:3px solid var(--blue);color:var(--navy);font-weight:900;font-size:20px;flex-shrink:0 object-fit: contain;
+padding: 3px;
+background: white;}
     .brand h1{font-size:clamp(17px,2.5vw,24px);line-height:1.2;color:var(--navy)}
     .brand p{font-size:12px;color:#687b8d}
     nav{display:flex;align-items:center;gap:20px;font-size:14px;font-weight:700}
@@ -77,7 +79,7 @@
   <header>
     <div class="head">
       <a class="brand" href="#home">
-        <div class="logo">PA</div>
+        <img class="logo" src="school-logo.png" alt="Prem Aadarsh Vidya Mandir Logo">
         <div><h1>Prem Aadarsh Vidya Mandir</h1><p>प्रेम आदर्श विद्या मंदिर · कठेला बाजार</p></div>
       </a>
       <button class="menu-btn" id="menuBtn" aria-label="मेन्यू खोलें">☰</button>
